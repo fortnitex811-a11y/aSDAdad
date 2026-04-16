@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Menu | The Daily Grind</title>
+    <title>Menu | The Daily Grind</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
         body { background-color: #fdfaf7; color: #3d2b1f; }
@@ -13,12 +13,13 @@
         nav ul li { margin-left: 20px; }
         nav a { color: white; text-decoration: none; }
         
-        .menu-container { padding: 50px 10%; text-align: center; }
-        h1 { margin-bottom: 30px; color: #6f4e37; }
-        .menu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; max-width: 800px; margin: 0 auto; }
-        .item { border-bottom: 1px dashed #d4a373; padding: 10px 0; display: flex; justify-content: space-between; }
+        .menu-container { padding: 60px 10%; text-align: center; min-height: 80vh; }
+        h1 { margin-bottom: 40px; color: #6f4e37; font-size: 2.5rem; }
+        .menu-grid { display: grid; grid-template-columns: 1fr; gap: 15px; max-width: 600px; margin: 0 auto; }
+        .item { border-bottom: 1px dashed #d4a373; padding: 15px 0; display: flex; justify-content: space-between; font-size: 1.2rem; }
         .price { font-weight: bold; color: #d4a373; }
-        .back-btn { display: inline-block; margin-top: 40px; color: #6f4e37; font-weight: bold; }
+        .back-link { display: inline-block; margin-top: 50px; color: #6f4e37; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -32,16 +33,17 @@
     </nav>
 
     <div class="menu-container">
-        <h1>Our Full Menu</h1>
+        <h1>Our Coffee Menu</h1>
         <div class="menu-grid">
-            <div class="item"><span>Espresso</span> <span class="price">₱120</span></div>
-            <div class="item"><span>Americano</span> <span class="price">₱140</span></div>
-            <div class="item"><span>Latte</span> <span class="price">₱160</span></div>
-            <div class="item"><span>Cappuccino</span> <span class="price">₱160</span></div>
-            <div class="item"><span>Spanish Latte</span> <span class="price">₱180</span></div>
-            <div class="item"><span>Cold Brew</span> <span class="price">₱170</span></div>
+            <div class="item"><span>Espresso</span> <span class="price">₱110</span></div>
+            <div class="item"><span>Americano</span> <span class="price">₱130</span></div>
+            <div class="item"><span>Barako Blend</span> <span class="price">₱140</span></div>
+            <div class="item"><span>Cafe Latte</span> <span class="price">₱150</span></div>
+            <div class="item"><span>Spanish Latte</span> <span class="price">₱170</span></div>
+            <div class="item"><span>Caramel Macchiato</span> <span class="price">₱180</span></div>
+            <div class="item"><span>Cold Brew</span> <span class="price">₱160</span></div>
         </div>
-        <a href="index.html" class="back-btn">← Back to Home</a>
+        <a href="index.html" class="back-link">← Back to Home</a>
     </div>
 
 </body>
