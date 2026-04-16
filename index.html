@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Daily Grind | Artisan Coffee</title>
     <style>
-        /* Modern Reset & Typography */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
         body { background-color: #fdfaf7; color: #3d2b1f; line-height: 1.6; }
 
         /* Navigation */
         nav { background: #2c1e14; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { font-size: 1.5rem; font-weight: bold; color: #d4a373; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #d4a373; text-decoration: none; }
         nav ul { list-style: none; display: flex; }
         nav ul li { margin-left: 20px; }
         nav a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
@@ -21,69 +20,57 @@
         header { 
             height: 80vh; 
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=2070'); 
-            background-size: cover; 
-            background-position: center;
+            background-size: cover; background-position: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px;
         }
-        header h1 { font-size: 4rem; margin-bottom: 1rem; }
-        header p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; }
-        .btn { background: #d4a373; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        header h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .btn { background: #d4a373; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; margin-top: 20px; }
         .btn:hover { background: #bc8a5f; }
 
-        /* Menu Section */
         .section { padding: 80px 10%; text-align: center; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .card h3 { color: #6f4e37; margin-bottom: 10px; }
-
-        /* Footer */
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         footer { background: #2c1e14; color: #8d7d72; padding: 40px 10%; text-align: center; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo">THE DAILY GRIND</div>
+        <a href="index.html" class="logo">THE DAILY GRIND</a>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header id="home">
+    <header>
         <h1>Life Begins After Coffee</h1>
-        <p>Ethically sourced, small-batch roasted, and brewed with obsessive attention to detail.</p>
-        <a href="#menu" class="btn">View Our Roast</a>
+        <p>Ethically sourced, small-batch roasted, and brewed in the heart of the city.</p>
+        <a href="menu.html" class="btn">View Our Menu</a>
     </header>
 
-    <section class="section" id="menu">
-        <h2>Our Favorites</h2>
+    <section class="section">
+        <h2>Why Choose Us?</h2>
         <div class="grid">
             <div class="card">
-                <h3>Midnight Velvet</h3>
-                <p>A dark roast with notes of dark chocolate and toasted hazelnuts. Bold and smooth.</p>
+                <h3>Freshly Roasted</h3>
+                <p>We use premium beans roasted weekly to ensure the boldest flavor in every cup.</p>
             </div>
             <div class="card">
-                <h3>Golden Sunrise</h3>
-                <p>Lightly roasted Ethiopian beans featuring floral aromas and a citrus finish.</p>
+                <h3>Local Favorites</h3>
+                <p>From classic Espresso to our signature Spanish Latte and Barako blends.</p>
             </div>
             <div class="card">
-                <h3>The Daily Blend</h3>
-                <p>Our signature medium roast. Balanced, nutty, and perfect for your morning ritual.</p>
+                <h3>Cozy Space</h3>
+                <p>The perfect spot for studying, working, or catching up with friends.</p>
             </div>
         </div>
     </section>
 
-    <section class="section" id="about" style="background: #f4ece6;">
-        <h2>The Bean Journey</h2>
-        <p style="max-width: 800px; margin: 20px auto;">We partner directly with farmers in Colombia and Ethiopia to ensure every bean is harvested at peak ripeness. No middleman, no shortcuts—just pure, high-altitude goodness delivered to your cup.</p>
-    </section>
-
     <footer id="contact">
-        <p>&copy; 2026 The Daily Grind Coffee Co. | 123 Espresso Lane, Brew City</p>
-        <p>Open Daily: 6:00 AM - 8:00 PM</p>
+        <p>&copy; 2026 The Daily Grind Coffee Co. | Manila, Philippines</p>
+        <p>Open Daily: 7:00 AM - 9:00 PM</p>
     </footer>
 
 </body>
